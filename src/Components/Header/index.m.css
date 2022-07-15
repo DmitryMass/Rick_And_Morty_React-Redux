@@ -1,0 +1,90 @@
+.header {
+  background-image: url(../../Assets/Img/stars.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.header__wrap {
+  padding: 25px;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+.header__logo > object {
+  max-width: 100%;
+  filter: drop-shadow(2px 4px 6px rgb(29, 179, 139));
+  animation-name: logo;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header__btn {
+  display: block;
+  position: relative;
+  color: white;
+  z-index: 1;
+  padding: 10px 20px;
+  background: #bfde42;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  border-radius: 50px 0 50px 0;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+  animation-name: btn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes btn {
+  0% {
+    transform: translateY(-150px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header__btn:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #42b4ca;
+
+  transition: all 0.3s ease;
+  border-radius: 50px 0 50px 0;
+}
+.header__btn:hover {
+  color: black;
+}
+.header__btn:hover:after {
+  top: 0;
+  height: 100%;
+}
+.header__btn:active {
+  top: 2px;
+}
