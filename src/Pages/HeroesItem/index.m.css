@@ -10,6 +10,8 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .character__box {
@@ -50,13 +52,12 @@
 }
 
 .netflix__link {
-  position: fixed;
+  position: relative;
   width: 200px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 10%;
   padding: 15px 30px;
   border-radius: 100px 0px 100px 0px;
   border: 2px solid #333;
@@ -98,8 +99,7 @@
   width: 100%;
 }
 .home__link {
-  position: fixed;
-  top: 10%;
+  position: relative;
   width: 100px;
   height: 40px;
   display: flex;
@@ -172,13 +172,11 @@
     line-height: 16px;
   }
   .netflix__link {
-    bottom: 3%;
-    padding: 5px 20px;
+    padding: 10px 20px;
     height: 20px;
   }
   .home__link {
-    top: 3%;
-    padding: 5px 20px;
+    padding: 10px 20px;
     height: 20px;
   }
 }
