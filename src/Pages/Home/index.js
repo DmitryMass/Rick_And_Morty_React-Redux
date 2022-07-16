@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
-import { nanoid } from 'nanoid';
-
-import styles from './index.m.css';
 import { Link } from 'react-router-dom';
+
+import { nanoid } from 'nanoid';
+import PropTypes from 'prop-types';
+import styles from './index.m.css';
+
 import Header from '../../Components/Header';
 
 const Home = ({ scrolls, handleClick }) => {
@@ -34,6 +36,10 @@ const Home = ({ scrolls, handleClick }) => {
       </main>
     </>
   );
+};
+
+Home.propTypes = {
+  scrolls: PropTypes.object.isRequired,
 };
 
 export default Home;
