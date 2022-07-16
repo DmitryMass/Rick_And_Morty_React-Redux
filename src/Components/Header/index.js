@@ -4,17 +4,11 @@ import logo from '../../Assets/Icons/Rick_and_Morty.svg';
 import Button from '../Button';
 import styles from './index.m.css';
 
-const Header = ({ setPerson, handleClick }) => {
-  const onBtnClick = (e) => {
-    e.preventDefault();
-    setPerson((prev) => !prev);
-    setTimeout(handleClick, 500);
-  };
-
+const Header = ({ handleClick }) => {
   return (
     <header className={styles.header}>
       <div className="header__container">
-        <Button onBtnClick={onBtnClick} styles={styles}>
+        <Button onBtnClick={handleClick} styles={styles}>
           Show Сharacters List
         </Button>
         <div className={styles.header__logo}>

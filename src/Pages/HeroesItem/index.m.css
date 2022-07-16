@@ -53,7 +53,9 @@
   position: fixed;
   width: 200px;
   height: 40px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 10%;
   padding: 15px 30px;
   border-radius: 100px 0px 100px 0px;
@@ -112,7 +114,7 @@
   font-size: 24px;
   text-decoration: none;
   letter-spacing: 2px;
-  text-align: center;
+
   transition: all 0.35s;
   animation-name: btn;
   animation-duration: 1s;
@@ -170,9 +172,13 @@
     line-height: 16px;
   }
   .netflix__link {
-    bottom: 12%;
+    bottom: 3%;
+    padding: 5px 20px;
+    height: 20px;
   }
   .home__link {
-    top: 13%;
+    top: 3%;
+    padding: 5px 20px;
+    height: 20px;
   }
 }
