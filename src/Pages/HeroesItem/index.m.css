@@ -11,7 +11,7 @@
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
-  gap: 25px;
+  gap: 10px;
 }
 
 .character__box {
